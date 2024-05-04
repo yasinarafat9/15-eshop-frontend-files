@@ -51,8 +51,8 @@ const Category = () => {
                                 <p className='text-4xl  xl:text-5xl font-bold opacity-50 mb-2'>Gadget</p>
                                 <Button
                                     text={"Browse"}
-                                    bgColor={"bg-black"}
-                                    textColor={"text-brandYellow"} >
+                                    bgColor={"bg-primary"}
+                                    textColor={"text-white"} >
                                 </Button>
                             </div>
                         </div>
