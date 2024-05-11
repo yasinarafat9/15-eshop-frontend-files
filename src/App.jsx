@@ -10,6 +10,7 @@ import smartWatch2 from './assets/category/smartwatch2-removebg-preview.png'
 import Products from './components/Products/Products';
 import Blogs from './components/Blogs/Blogs';
 import Partners from './components/Partners/Partners';
+import Footer from './components/Footer/Footer';
 
 const BannerData = {
   discount: "30% OFF",
@@ -46,6 +47,7 @@ const App = () => {
       <Banner data={BannerData2}></Banner>
       <Blogs></Blogs>
       <Partners></Partners>
+      <Footer></Footer>
     </div>
   );
 };

@@ -15,9 +15,7 @@ const Partners = () => {
                     <img src={brand3} alt="brand" className='w-[80px] dark:invert' />
                     <img src={brand4} alt="brand" className='w-[80px] dark:invert' />
                     <img src={brand5} alt="brand" className='w-[80px] dark:invert' />
-
                 </div>
-
             </div>
         </div>
     );
