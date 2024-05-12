@@ -12,18 +12,21 @@ const BlogData = [
         subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique accusantium ipsum delectus est fugiat doloremque eligendi animi neque beatae debitis perferendis, eum dolorem dignissimos consectetur nemo reiciendis voluptatum fugit? Delectus omnis deleniti numquam accusamus, similique esse impedit velit consequatur, veniam quidem a voluptatum at. Consectetur dolores iste totam praesentium?",
         published: "Jan 20, 2024 by Dilshad",
         Image: Img1,
+        aosDelay: "0"
     },
     {
         title: "How to choose perfect Gadget",
         subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique accusantium ipsum delectus est fugiat doloremque eligendi animi neque beatae debitis perferendis, eum dolorem dignissimos consectetur nemo reiciendis voluptatum fugit? Delectus omnis deleniti numquam accusamus, similique esse impedit velit consequatur, veniam quidem a voluptatum at. Consectetur dolores iste totam praesentium?",
         published: "Jan 20, 2024 by Satya",
         Image: Img2,
+        aosDelay: "200",
     },
     {
         title: "How to choose perfect VR headset",
         subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique accusantium ipsum delectus est fugiat doloremque eligendi animi neque beatae debitis perferendis, eum dolorem dignissimos consectetur nemo reiciendis voluptatum fugit? Delectus omnis deleniti numquam accusamus, similique esse impedit velit consequatur, veniam quidem a voluptatum at. Consectetur dolores iste totam praesentium?",
         published: "Jan 20, 2024 by Sabir",
         Image: Img3,
+        asoDelay: "400"
     },
 ]
 
@@ -41,7 +44,10 @@ const Blogs = () => {
                     {/* Blog Card */}
                     {
                         BlogData.map((data) => (
-                            <div key={data.title} className='bg-white dark:bg-gray-900'>
+                            <div 
+                            data-aos="fade-up"
+                            data-aos-delay={data.aosDelay}
+                            key={data.title} className='bg-white dark:bg-gray-900'>
                                 {/* Image Section */}
                                 <div  className='overflow-hidden rounded-2xl mb-2'>
                                     <img src={data.Image} alt=""
